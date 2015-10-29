@@ -1,6 +1,6 @@
 # Conversor de Temperatura 
 
-En esta práctica se ha realiado un conversor de temperatura en javascript, usando clases y herencias. Además se han realizado tests usando mocha y chai. Tests: BDD. Otras tecnologías usadas:
+En esta práctica se ha realiado un conversor de temperatura en javascript, usando clases y herencias. Además se han realizado tests usando mocha y chai. Tests: BDD. Otras tecnologías usadas :
 
 * blanket
 * Travis
