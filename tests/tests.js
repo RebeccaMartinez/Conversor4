@@ -16,8 +16,8 @@ describe("Tests del Conversor", function() {
       expect(espia.firstCall.calledWith(22e3)).to.be.true;
       expect(espia.firstCall.calledWith(sinon.match.number)).to.be.true;
 
-      expect(temp.get_valor()).to.equal(22e3);
-      expect(temp.get_tipo()).to.equal("K");
+      expect(temp.getValor()).to.equal(22e3);
+      expect(temp.getTipo()).to.equal("K");
     });
 });
 
