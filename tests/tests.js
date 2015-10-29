@@ -2,7 +2,7 @@ var expect = chai.expect;
 
 describe("Tests del Conversor", function() {
 
-    it("-3.4F === 253.48Kelvin", function() {
+    it("22F === 267.59Kelvin", function() {
       var temp = new Temperatura();
 
       temp.setValor(-3.4);
@@ -18,7 +18,7 @@ describe("Tests del Conversor", function() {
 
       var aux = temp.fak();
 
-      expect(aux).to.equal(253.48);
+      expect(aux).to.equal(267.59);
     });
 
 
@@ -58,7 +58,7 @@ describe("Tests del Conversor", function() {
 
       var aux = temp.kac();
 
-      expect(aux).to.equal(279.45);
+      expect(aux).to.equal(-279.45);
     });
 
     it("Resultado: 22e3K", function() {
