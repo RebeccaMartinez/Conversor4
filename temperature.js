@@ -63,7 +63,7 @@ Temperatura.prototype.kaf = function(){
   return result1;
 };
 
-function calculate(){
+Temperatura.prototype.calculate = function(){
   var final = 0;
   var temp = original.value;
   var regexp = /([+-]?\d+(?:\.\d*)?(?:\s*[eE]\d+)?)\s*([fFcCkK])/
