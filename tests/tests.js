@@ -13,10 +13,10 @@ describe("Tests del Conversor", function() {
 
       expect(espia.called).to.be.true;
       expect(espia.calledOnce).to.be.true;
-      expect(espia.firstCall.calledWith(0.032)).to.be.true;
+      expect(espia.firstCall.calledWith(-3.4)).to.be.true;
       expect(espia.firstCall.calledWith(sinon.match.number)).to.be.true;
 
-      var aux = temp.conversor();
+      var aux = temp.calculate();
 
       expect(aux).to.equal("-19.67 Celsius, 253.48Kelvin");
     });
@@ -36,7 +36,7 @@ describe("Tests del Conversor", function() {
       expect(espia.firstCall.calledWith(41.4e3)).to.be.true;
       expect(espia.firstCall.calledWith(sinon.match.number)).to.be.true;
 
-      var aux = temp.conversor();
+      var aux = temp.calculate();
 
       expect(aux).to.equal("74552.00 Fahrenheit, 41673.15Kelvin");
     });
@@ -56,7 +56,7 @@ describe("Tests del Conversor", function() {
       expect(espia.firstCall.calledWith(-6.3)).to.be.true;
       expect(espia.firstCall.calledWith(sinon.match.number)).to.be.true;
 
-      var aux = temp.conversor();
+      var aux = temp.calculate();
 
       expect(aux).to.equal("-279.45Celsius, -471.01Fahrenheit");
     });
