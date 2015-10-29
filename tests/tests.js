@@ -2,11 +2,11 @@ var expect = chai.expect;
 
 describe("Tests del Conversor", function() {
 
-    it("Debería ser: 22e3K", function() {
+    it("Resultado: 22e3K", function() {
       var temp = new Temperatura();
 
-      temp.set_valor(22e3);
-      temp.set_tipo("K");
+      temp.setValor(22e3);
+      temp.setTipo("K");
 
       var espia = sinon.spy();
       espia(temp.getValor());
