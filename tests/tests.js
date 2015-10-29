@@ -9,7 +9,7 @@ describe("Tests del Conversor", function() {
       temp.setTipo("F");
 
       var espia = sinon.spy();
-      espia(temp.get_valor());
+      espia(temp.getValor());
 
       expect(espia.called).to.be.true;
       expect(espia.calledOnce).to.be.true;
@@ -29,7 +29,7 @@ describe("Tests del Conversor", function() {
       temp.setTipo("c");
 
       var espia = sinon.spy();
-      espia(temp.get_valor());
+      espia(temp.getValor());
 
       expect(espia.called).to.be.true;
       expect(espia.calledOnce).to.be.true;
@@ -49,7 +49,7 @@ describe("Tests del Conversor", function() {
       temp.setTipo("k");
 
       var espia = sinon.spy();
-      espia(temp.get_valor());
+      espia(temp.getValor());
 
       expect(espia.called).to.be.true;
       expect(espia.calledOnce).to.be.true;
