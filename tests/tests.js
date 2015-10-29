@@ -18,7 +18,7 @@ describe("Tests del Conversor", function() {
 
       var aux = temp.fak();
 
-      expect(aux).to.equal("253.48Kelvin");
+      expect(aux).to.equal(253.48);
     });
 
 
@@ -38,7 +38,7 @@ describe("Tests del Conversor", function() {
 
       var aux = temp.caf();
 
-      expect(aux).to.equal("74552.00 Fahrenheit");
+      expect(aux).to.equal(74552.00);
     });
 
 
@@ -58,7 +58,7 @@ describe("Tests del Conversor", function() {
 
       var aux = temp.kac();
 
-      expect(aux).to.equal("-279.45Celsius, -471.01Fahrenheit");
+      expect(aux).to.equal(279.45);
     });
 
     it("Resultado: 22e3K", function() {
