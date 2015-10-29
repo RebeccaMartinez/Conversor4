@@ -2,22 +2,22 @@ var expect = chai.expect;
 
 describe("Tests del Conversor", function() {
 
-    it("Debería ser: 32e4F", function() {
+    it("Debería ser: 22e3K", function() {
       var temp = new Temperatura();
 
-      temp.set_valor(32e4);
-      temp.set_tipo("F");
+      temp.set_valor(22e3);
+      temp.set_tipo("K");
 
       var espia = sinon.spy();
-      espia(temp.get_valor());
+      espia(temp.getValor());
 
       expect(espia.called).to.be.true;
       expect(espia.calledOnce).to.be.true;
-      expect(espia.firstCall.calledWith(32e4)).to.be.true;
+      expect(espia.firstCall.calledWith(22e3)).to.be.true;
       expect(espia.firstCall.calledWith(sinon.match.number)).to.be.true;
 
-      expect(temp.get_valor()).to.equal(32e4);
-      expect(temp.get_tipo()).to.equal("F");
+      expect(temp.get_valor()).to.equal(22e3);
+      expect(temp.get_tipo()).to.equal("K");
     });
 });
 
