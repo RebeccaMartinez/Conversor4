@@ -65,27 +65,30 @@ Temperatura.prototype.kaf = function(){
 
 Temperatura.prototype.calculate = function(){
   var final = 0;
+  if(this.getTipo() == 'c' || this.getTipo() == 'C'){
+    final = this.caf().toFixed(2) + " Fahrenheit" + ", " +this.cak().toFixed(2) + "Kelvin";
+  }
+  if(this.getTipo() == 'f' || this.getTipo() == 'F'){
+    final = this.fac().toFixed(2) + " Celsius" + ", " +this.fak().toFixed(2) + "Kelvin";
+  }
+  if(this.getTipo() == 'k' || this.getTipo() == 'K'){
+    final = this.kac().toFixed(2) + "Celsius" + ", " +this.kaf().toFixed(2) + "Fahrenheit";
+  }
+  document.getElementById("converted").setAttribute("col", "gr");
+  converted.innerHTML = final;
+  
+}
+
+function resultado(){
   var temp = original.value;
   var regexp = /([+-]?\d+(?:\.\d*)?(?:\s*[eE]\d+)?)\s*([fFcCkK])/
   var m = temp.match(regexp);
-
   if(m){
     m[1] = parseFloat(m[1]);
-    var convertir = new Temperatura(0,0);
+    var convertir = new Temperatura();
     convertir.setTipo(m[2]);
     convertir.setValor(m[1]);
-    if(convertir.getTipo() == 'c' || convertir.getTipo() == 'C'){
-      final = convertir.caf().toFixed(2) + " Fahrenheit" + ", " +convertir.cak().toFixed(2) + "Kelvin";
-    }
-    if(convertir.getTipo() == 'f' || convertir.getTipo() == 'F'){
-      final = convertir.fac().toFixed(2) + " Celsius" + ", " +convertir.fak().toFixed(2) + "Kelvin";
-    }
-    if(convertir.getTipo() == 'k' || convertir.getTipo() == 'K'){
-      final = convertir.kac().toFixed(2) + "Celsius" + ", " +convertir.kaf().toFixed(2) + "Fahrenheit";
-    }
-    document.getElementById("converted").setAttribute("col", "gr");
-    converted.innerHTML = final;
-
+    convertir.calculate();
   }
   else{
     document.getElementById("converted").setAttribute("col", "rd");
