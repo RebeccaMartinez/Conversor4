@@ -18,7 +18,7 @@ describe("Tests del Conversor", function() {
 
       var aux = temp.fak().toFixed(2);
 
-      expect(aux).to.equal(267.59);
+      expect(aux).to.equal('267.59');
     });
 
     it("11.1F === -11.61 Celsius", function() {
@@ -37,7 +37,7 @@ describe("Tests del Conversor", function() {
 
       var aux = temp.fac().toFixed(2);
 
-      expect(aux).to.equal(-11.61);
+      expect(aux).to.equal('-11.61');
     });
 
     it("41.4e3c === 74552.00 Fahrenheit", function() {
@@ -56,7 +56,7 @@ describe("Tests del Conversor", function() {
 
       var aux = temp.caf().toFixed(2);
 
-      expect(aux).to.equal(74552.00);
+      expect(aux).to.equal('74552.00');
     });
 
     it("-2e3C === -1726.85Kelvin", function() {
@@ -75,7 +75,7 @@ describe("Tests del Conversor", function() {
 
       var aux = temp.cak().toFixed(2);
 
-      expect(aux).to.equal(-1726.85);
+      expect(aux).to.equal('-1726.85');
     });
 
 
@@ -95,7 +95,7 @@ describe("Tests del Conversor", function() {
 
       var aux = temp.kac().toFixed(2);
 
-      expect(aux).to.equal(-279.45);
+      expect(aux).to.equal('-279.45');
     });
 
     it("303.3K === 85.73Fahrenheit", function() {
@@ -114,7 +114,7 @@ describe("Tests del Conversor", function() {
 
       var aux = temp.kaf().toFixed(2);
 
-      expect(aux).to.equal(85.73);
+      expect(aux).to.equal('85.73');
     });
 
     it("Resultado: 22e3K", function() {
