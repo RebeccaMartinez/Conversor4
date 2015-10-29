@@ -16,9 +16,9 @@ describe("Tests del Conversor", function() {
       expect(espia.firstCall.calledWith(-3.4)).to.be.true;
       expect(espia.firstCall.calledWith(sinon.match.number)).to.be.true;
 
-      var aux = temp.calculate();
+      var aux = temp.fak();
 
-      expect(aux).to.equal("-19.67 Celsius, 253.48Kelvin");
+      expect(aux).to.equal("253.48Kelvin");
     });
 
 
