@@ -16,7 +16,7 @@ describe("Tests del Conversor", function() {
       expect(espia.firstCall.calledWith(22)).to.be.true;
       expect(espia.firstCall.calledWith(sinon.match.number)).to.be.true;
 
-      var aux = temp.fak();
+      var aux = temp.fak().toFixed(2);
 
       expect(aux).to.equal(267.59);
     });
@@ -35,7 +35,7 @@ describe("Tests del Conversor", function() {
       expect(espia.firstCall.calledWith(11.1)).to.be.true;
       expect(espia.firstCall.calledWith(sinon.match.number)).to.be.true;
 
-      var aux = temp.fac();
+      var aux = temp.fac().toFixed(2);
 
       expect(aux).to.equal(-11.61);
     });
@@ -54,7 +54,7 @@ describe("Tests del Conversor", function() {
       expect(espia.firstCall.calledWith(41.4e3)).to.be.true;
       expect(espia.firstCall.calledWith(sinon.match.number)).to.be.true;
 
-      var aux = temp.caf();
+      var aux = temp.caf().toFixed(2);
 
       expect(aux).to.equal(74552.00);
     });
@@ -73,7 +73,7 @@ describe("Tests del Conversor", function() {
       expect(espia.firstCall.calledWith(-2e3)).to.be.true;
       expect(espia.firstCall.calledWith(sinon.match.number)).to.be.true;
 
-      var aux = temp.cak();
+      var aux = temp.cak().toFixed(2);
 
       expect(aux).to.equal(-1726.85);
     });
@@ -93,7 +93,7 @@ describe("Tests del Conversor", function() {
       expect(espia.firstCall.calledWith(-6.3)).to.be.true;
       expect(espia.firstCall.calledWith(sinon.match.number)).to.be.true;
 
-      var aux = temp.kac();
+      var aux = temp.kac().toFixed(2);
 
       expect(aux).to.equal(-279.45);
     });
@@ -112,7 +112,7 @@ describe("Tests del Conversor", function() {
       expect(espia.firstCall.calledWith(303.3)).to.be.true;
       expect(espia.firstCall.calledWith(sinon.match.number)).to.be.true;
 
-      var aux = temp.kaf();
+      var aux = temp.kaf().toFixed(2);
 
       expect(aux).to.equal(85.73);
     });
