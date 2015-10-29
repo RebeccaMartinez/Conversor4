@@ -98,7 +98,7 @@ describe("Tests del Conversor", function() {
       expect(aux).to.equal('-279.45');
     });
 
-    it("303.3K === 85.73Fahrenheit", function() {
+    it("303.3K === 83.27Fahrenheit", function() {
       var temp = new Temperatura();
 
       temp.setValor(303.3);
@@ -114,7 +114,7 @@ describe("Tests del Conversor", function() {
 
       var aux = temp.kaf().toFixed(2);
 
-      expect(aux).to.equal('85.73');
+      expect(aux).to.equal('83.27');
     });
 
     it("Resultado: 22e3K", function() {
