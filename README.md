@@ -14,5 +14,3 @@ Enlace a mi Github page: [Rebecca](http://rebeccamartinez.github.io/)
 Github page de las pruebas con blanket: [Pruebas](http://rebeccamartinez.github.io/Conversor3/tests/test_blanket)
 
 
-[![Build Status](https://travis-ci.org/RebeccaMartinez/Conversor3.svg?branch=master)](https://travis-ci.org/RebeccaMartinez/Conversor3)
-
