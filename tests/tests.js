@@ -5,7 +5,7 @@ describe("Tests del Conversor", function() {
     it("22F === 267.59Kelvin", function() {
       var temp = new Temperatura();
 
-      temp.setValor(-3.4);
+      temp.setValor(-22);
       temp.setTipo("F");
 
       var espia = sinon.spy();
@@ -13,7 +13,7 @@ describe("Tests del Conversor", function() {
 
       expect(espia.called).to.be.true;
       expect(espia.calledOnce).to.be.true;
-      expect(espia.firstCall.calledWith(-3.4)).to.be.true;
+      expect(espia.firstCall.calledWith(22)).to.be.true;
       expect(espia.firstCall.calledWith(sinon.match.number)).to.be.true;
 
       var aux = temp.fak();
