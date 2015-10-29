@@ -19,6 +19,25 @@ describe("Tests del Conversor", function() {
       expect(temp.getValor()).to.equal(22e3);
       expect(temp.getTipo()).to.equal("K");
     });
+
+    it("Resultado: -13.6E-4C", function() {
+      var temp = new Temperatura();
+      temp.setValor(-13.6E-4);
+      temp.setTipo("C");
+
+      var espia = sinon.spy();
+      espia(temp.getTipo());
+
+      expect(espia.called).to.be.true;
+      expect(espia.calledOnce).to.be.true;
+      expect(espia.firstCall.calledWith("C")).to.be.true;
+      expect(espia.firstCall.calledWith(sinon.match.string)).to.be.true;
+
+      expect(temp.getValor()).to.equal(-13.6E-4);
+      expect(temp.getTipo()).to.equal("C");
+    });
+
+
 });
 
 // var expect = chai.expect;
