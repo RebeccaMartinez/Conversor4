@@ -1,0 +1,32 @@
+{
+  "name": "Conversor3",
+  "version": "1.0.0",
+  "description": "conversor de temperatura",
+  "main": "temperature.js",
+  "scripts": {
+    "test": "open tests/index.html",
+    "karma": "./node_modules/karma/bin/karma start --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Conversor3"
+  },
+  "keywords": [
+    "conversor"
+  ],
+  "author": "Rebecca",
+  "license": "ISC",
+  "devDependencies": {
+    "karma": "*",
+    "karma-mocha": "*",
+    "karma-chai": "*",
+    "karma-html2js-preprocessor": "*",
+    "karma-chrome-launcher": "^0.2.1",
+    "karma-firefox-launcher": "*",
+    "mocha":"2.3.3",
+    "chai": "^3.3.0",
+    "del": "^2.0.2",
+    "blanket" : "*",
+    "html2js": "^0.2.0"
+  }
+}
