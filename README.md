@@ -47,9 +47,9 @@ nodejs static-server.js
 
 ##ENLACES
 
-Enlace al conversor: [Conversor](http://rebeccamartinez.github.io/Conversor4/)
-Despliegue: http://10.6.128.87:8080/index.html
-Enlace a mi Github page: [Rebecca](http://rebeccamartinez.github.io/)
-Github page de las pruebas con blanket: [Pruebas](http://rebeccamartinez.github.io/Conversor3/tests/test_blanket)
-Pruebas en iaas: [Pruebas](http://10.6.128.87:8080/tests/test_blanket.html)
+* Enlace al conversor: [Conversor](http://rebeccamartinez.github.io/Conversor4/)
+* Despliegue: http://10.6.128.87:8080/index.html
+* Enlace a mi Github page: [Rebecca](http://rebeccamartinez.github.io/)
+* Github page de las pruebas con blanket: [Pruebas](http://rebeccamartinez.github.io/Conversor3/tests/test_blanket)
+* Pruebas en iaas: [Pruebas](http://10.6.128.87:8080/tests/test_blanket.html)
 
